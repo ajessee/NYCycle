@@ -1,0 +1,1 @@
+Geokit::Geocoders::GoogleGeocoder.api_key = Rails.application.credentials.dig(:google_maps_api_key) 

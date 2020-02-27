@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=<%= Rails.application.credentials.dig(:google_maps_api_key) %>">
+    </script>
+    <title><%= content_for?(:title) ? yield(:title) : "NYCycle" %></title></title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <!-- TODO -->
+
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
