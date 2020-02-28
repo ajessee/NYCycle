@@ -1,4 +1,3 @@
-window.NYCycle = {};
 window.NYCycle.map;
 
 window.NYCycle.initMap = function(user_lat, user_lng, bin_lat, bin_lng) {
