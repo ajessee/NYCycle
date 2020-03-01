@@ -1,0 +1,278 @@
+.main-button {
+  background-color: #1779ba;
+  color: #fefefe;
+  padding: 0.5em;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+#main-container.maps-visible {
+  grid-auto-rows: unset;
+  grid-template-rows: 15% 75%;
+  grid-template-columns: auto;
+  justify-items: unset;
+  align-content: unset;
+  row-gap: 1%;
+}
+
+#main-container {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 5%;
+  height: 100vh;
+  justify-items: center;
+  grid-auto-rows: min-content;
+  align-content: center;
+
+  #logo-container.maps-visible {
+    grid-row: 1;
+    grid-column: 1;
+    align-self: auto;
+    justify-self: left;
+    margin: 0;
+
+    #logo-link.enabled {
+      cursor: pointer;
+    }
+
+    #logo-link {
+      display: grid;
+
+      #nycycle-logo-svg {
+
+        width: 40%;
+        height: auto;
+
+        #logo-circle.spin {
+          transform-box: fill-box;
+          transform-origin: center;
+          animation: spin 2s linear infinite;
+        }
+      }
+
+
+    }
+  }
+
+  #logo-container {
+    grid-row: 1;
+    align-self: end;
+
+    #logo-link.disabled {
+      cursor: default;
+      pointer-events: none;
+    }
+
+    #logo-link {
+      display: grid;
+
+      #logo-circle.spin {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: spin 2s linear infinite;
+      }
+
+    }
+  }
+
+  #main-buttons-container {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+    align-self: start;
+  }
+
+  #main-buttons-container.maps-visible {
+    display: none;
+  }
+
+  #selection-buttons-container.maps-visible {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    display: block;
+    font-size: 0.7em;
+  }
+
+  #selection-buttons-container {
+    display: none;
+  }
+
+  #content-container.visible {
+    grid-row: 2;
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+    grid-template-rows: auto;
+
+    #map-container {
+      display: none;
+    }
+
+    #walking-directions-container {
+      display: none;
+    }
+
+    #walking-directions-map {
+      display: none;
+    }
+
+    #street-view-container {
+      display: none;
+    }
+
+    #map-container.visible {
+      display: block;
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    #walking-directions-container.visible {
+      display: block;
+      grid-column: 2;
+      grid-row: 1;
+      width: 75%;
+      justify-self: center;
+    }
+
+    #street-view-container.visible {
+      display: block;
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+  }
+
+  #content-container {}
+
+  #address-input-container.visible {
+    overflow: hidden;
+    transition: transform 0.5s ease-out, opacity 0.5s;
+    height: auto;
+    transform: scaleY(1);
+    transform-origin: top;
+    opacity: 1;
+  }
+
+  #address-input-container {
+    grid-column: 1;
+    grid-row: 3;
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s;
+    transform-origin: top;
+    transform: scaleY(0);
+
+
+    #address-input-form {
+      display: grid;
+      width: 50vw;
+      height: 40vh;
+
+      input {
+        font-size: 1.5em;
+        text-align: center;
+      }
+
+      #find-bin-button {
+        padding: 0%;
+        width: 40%;
+        justify-self: center;
+        margin: 3%;
+      }
+    }
+
+  }
+
+  #message-container.hidden {
+    display: none;
+  }
+
+  #message-container.visible {
+    grid-row: 3;
+    grid-column: 1;
+    display: grid;
+
+    #message-div {
+      display: grid;
+      padding: 2%;
+
+      p {
+        width: auto;
+        text-align: center;
+      }
+
+      p.blinking {
+        font-size: 2em;
+        animation: blinkingText 1.2s infinite;
+        width: max-content;
+      }
+
+      p.error {
+        font-size: 2em;
+      }
+
+      svg {
+        justify-self: center;
+        align-self: center;
+        font-size: 5em;
+      }
+
+      svg.fa-hiking {
+        align-self: end;
+      }
+
+    }
+
+  }
+}
+
+@keyframes blinkingText {
+  0% {
+    color: gray;
+  }
+
+  49% {
+    color: gray;
+  }
+
+  60% {
+    color: transparent;
+  }
+
+  99% {
+    color: transparent;
+  }
+
+  100% {
+    color: gray;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// Huge screen
+@media only screen and (min-width : 1501px) {
+  // placeholder
+}
+
+// Most screens
+@media only screen and (min-width : 1025px) and (max-width : 1500px) {
+  // placeholder
+}
+
+// iPads and tablets
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+  // placeholder
+}
+
+// Phones
+@media only screen and (max-width: 767px) {}
