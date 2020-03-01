@@ -1,0 +1,41 @@
+<div id="main-container">
+
+  <div id="logo-container">
+    <a id="logo-link" href="#" class="disabled">
+      <figure id="logo-container">
+        <%= show_svg('nycycle.svg') %>
+      </figure>
+    </a>
+  </div>
+
+  <div id="main-buttons-container" class="visible">
+    <button id="user-location" class="main-button location">Use Current Location</button>
+    <button id="address-location" class="main-button address">Input A NYC Address</button>
+  </div>
+
+  <div id="selection-buttons-container" class="hidden">
+    <button id="map-button" class="main-button">Map</button>
+    <button id="walking-directions-button" class="main-button">Directions</button>
+    <button id="street-view-button" class="main-button">View</button>
+  </div>
+
+  <div id="message-container" class="hidden">
+  </div>
+
+  <div id="content-container">
+    <div id="map-container"></div>
+    <div id="walking-directions-container"></div>
+    <div id="walking-directions-map"></div>
+    <div id="street-view-container"></div>
+  </div>
+
+  <div id="address-input-container">
+    <%= form_with(url: "/", id: "address-input-form") do %>
+    <%= text_field_tag "address", nil, placeholder:"Street Address", id: "street-input", required: true %>
+    <%= text_field_tag "city", nil, placeholder:"City", id: "city-input", required: true %>
+    <%= text_field_tag "zip", nil, placeholder:"Zip Code", id: "zip-input" %>
+    <%= submit_tag "Find Bin", id:"find-bin-button", class: "main-button" %>
+    <% end %>
+  </div>
+
+</div>
