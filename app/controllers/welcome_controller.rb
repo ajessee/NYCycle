@@ -6,11 +6,13 @@ class WelcomeController < ApplicationController
   def fetch_closest_bin
     @user_coordinates = Geokit::LatLng.new(bin_params[:lat].to_f,bin_params[:lng].to_f)
     @bin = Bin.closest(origin: @user_coordinates).first
+    @in_NYC = @user_coordinates.distance_to(@bin) < 20
     respond_to do |format|
       format.js {
         render json: {
           binLat: @bin.latitude,
-          binLng: @bin.longitude
+          binLng: @bin.longitude,
+          inNYC: @in_NYC
         }
       }
     end
@@ -21,13 +23,15 @@ class WelcomeController < ApplicationController
     address_data = Geokit::Geocoders::GoogleGeocoder.geocode address
     @address_coordinates = Geokit::LatLng.new(address_data.lat, address_data.lng)
     @closest_bin = Bin.closest(origin: @address_coordinates).first
+    @in_NYC = @address_coordinates.distance_to(@closest_bin) < 20
     respond_to do |format|
       format.js {
         render json: {
           addressLat: @address_coordinates.lat,
           addressLng: @address_coordinates.lng,
           binLat: @closest_bin.latitude,
-          binLng: @closest_bin.longitude
+          binLng: @closest_bin.longitude,
+          inNYC: @in_NYC
         }
       }
     end

@@ -25,6 +25,7 @@ const setUpApp = function () {
     binLng: null,
     userLat: null,
     userLng: null,
+    inNYC: null,
 
     // Get user's geolocation
     whereAmI: function () {
@@ -59,6 +60,7 @@ const setUpApp = function () {
             .then((data) => {
               app.binLat = data.binLat;
               app.binLng = data.binLng;
+              app.inNYC = data.in_NYC;
               resolve("Bin Data Set");
             });
         };
