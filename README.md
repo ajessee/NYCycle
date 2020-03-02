@@ -1,4 +1,4 @@
-![NYCycle](https://github.com/ajessee/NYCycle/blob/master/app/assets/images/nycycleSvg.svg)
+![NYCycle](https://github.com/ajessee/NYCycle/blob/master/app/assets/images/nycycleSvg.png)
 
 # [NYCycle](https://nycycle-1.herokuapp.com/) 
 
