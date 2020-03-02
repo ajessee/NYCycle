@@ -37,7 +37,6 @@ body {
   grid-template-columns: auto;
   grid-template-rows: auto;
   row-gap: 2%;
-  height: 100vh; 
   height: calc(var(--vh, 1vh) * 100);
   justify-items: center;
   font-family: 'Audiowide';
@@ -190,7 +189,7 @@ body {
   #address-input-container.visible {
     grid-column: 1;
     grid-row: 3;
-    display: block;
+    display: grid;
     // height: 0;
     // opacity: 0;
     // transition: transform 0.5s ease-out, opacity 0.5s ease-out;
