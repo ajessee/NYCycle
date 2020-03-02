@@ -395,6 +395,7 @@ const setUpApp = function () {
   mainApp.addressLocationButton.addEventListener('click', function (e) {
     mainApp.toggleMessage(false);
     mainApp.toggleAddressForm();
+    window.NYCycle.resizeScreen();
   })
 
   window.NYCycle.mainApp = mainApp;

@@ -6,13 +6,15 @@ application.keys().forEach(application)
 
 // Setup main JS object
 window.NYCycle = {
-    viewHeight: window.innerHeight * 0.01
+    viewHeight: window.innerHeight * 0.01,
+    resizeScreen: function(){
+        this.viewHeight = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${this.viewHeight}px`);
+        return this.viewHeight;
+    }
 };
-
-document.documentElement.style.setProperty('--vh', `${window.NYCycle.viewHeight}px`);
 
 // recalculate the --vh viewHeight CSS variable on window resize
 window.addEventListener('resize', () => {
-    window.NYCycle.viewHeight = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${window.NYCycle.viewHeight}px`);
+    window.NYCycle.resizeScreen();
 });
