@@ -32,11 +32,12 @@ body {
 }
 
 #main-container {
+  position: inherit;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
   row-gap: 2%;
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   justify-items: center;
   font-family: 'Audiowide';
 
@@ -353,7 +354,7 @@ body {
     #logo-container {
 
       align-self: center;
-      transform: scale(0.7);
+      transform: scale(0.6);
 
 
       #logo-link.disabled {}
@@ -422,12 +423,13 @@ body {
 
 
       #address-input-form {
-        width: auto;
-        height: auto;
-        justify-self: center;
+        width: unset;
+        height: unset;
 
 
-        input {}
+        input {
+          font-size: 1.2em !important;
+        }
 
         #find-bin-button {}
       }
