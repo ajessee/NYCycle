@@ -83,6 +83,12 @@ const setUpApp = function () {
               app.toggleMessage(true, 'Weird. We have an error that we cannot figure out. Please use address form instead' , 'error');
               app.toggleSpinner(false);
           }
+          if (app.userLocationButton.getAttribute('disabled') === 'true') {
+            app.userLocationButton.removeAttribute('disabled')
+          }
+          if (app.addressLocationButton.getAttribute('disabled') === 'true') {
+            app.addressLocationButton.removeAttribute('disabled')
+          }
           reject("Geolocation Error")
         };
 
@@ -138,11 +144,13 @@ const setUpApp = function () {
         app.addressInputContainer.classList.remove('visible');
         app.addressLocationButton.style.backgroundColor = '#1779ba';
         app.addressLocationButton.textContent = 'Input A NYC Address';
+        app.userLocationButton.removeAttribute('disabled');
       } else {
         app.mainContainer.classList.add('address-visible');
         app.addressInputContainer.classList.add('visible');
         app.addressLocationButton.style.backgroundColor = '#de4d43';
         app.addressLocationButton.textContent = 'Cancel';
+        app.userLocationButton.setAttribute('disabled', 'true');
       }
     },
 
@@ -181,6 +189,7 @@ const setUpApp = function () {
       // Show nav buttons
       app.selectionsButtonsContainer.classList.add('maps-visible');
       // Show content area
+      app.contentContainer.classList.remove('hidden');
       app.contentContainer.classList.add('visible');
       // Show main mapp area
       app.mapContainer.classList.add('visible');
@@ -332,16 +341,19 @@ const setUpApp = function () {
       app.messageContainer.classList.add('visible');
     },
 
-    setPendingState: function () {
+    setPendingState: function (button) {
       let app = window.NYCycle.mainApp;
       // Turn on spinner
       app.toggleSpinner(true);
       // Show info panel
       app.toggleMessage(true, 'Getting maps...', 'request');
+      if (button.id ==='user-location') {
+        app.addressLocationButton.setAttribute('disabled', 'true');
+      } else {
+        app.userLocationButton.setAttribute('disabled', 'true');
+        app.addressLocationButton.setAttribute('disabled', 'true');
+      }
     },
-
-
-
 
   }
 
@@ -363,7 +375,7 @@ const setUpApp = function () {
   mainApp.addressInputForm.addEventListener('submit', function (e) {
     e.preventDefault();
     mainApp.toggleAddressForm(true);
-    mainApp.setPendingState();
+    mainApp.setPendingState(mainApp.addressLocationButton);
     mainApp.whereIsThis(mainApp.addressInputForm)
       .then(mainApp.getMainMap)
       .catch(function (exception) {
@@ -372,7 +384,7 @@ const setUpApp = function () {
   })
 
   mainApp.userLocationButton.addEventListener('click', function (e) {
-    mainApp.setPendingState();
+    mainApp.setPendingState(this);
     mainApp.whereAmI()
       .then(mainApp.getMainMap)
       .catch(function (exception) {

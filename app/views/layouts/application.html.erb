@@ -4,10 +4,12 @@
       <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=<%= Rails.application.credentials.dig(:google_maps_api_key) %>">
     </script>
-    <title><%= content_for?(:title) ? yield(:title) : "NYCycle" %></title></title>
+    <title><%= content_for?(:title) ? yield(:title) : "NYCycle" %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= render 'layouts/fonts' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 

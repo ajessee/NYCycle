@@ -2,7 +2,7 @@
 
   <div id="logo-container">
     <a id="logo-link" href="#" class="disabled">
-      <figure id="logo-container">
+      <figure id="svg-container">
         <%= show_svg('nycycle.svg') %>
       </figure>
     </a>
@@ -22,7 +22,7 @@
   <div id="message-container" class="hidden">
   </div>
 
-  <div id="content-container">
+  <div id="content-container" class="hidden">
     <div id="map-container"></div>
     <div id="walking-directions-container"></div>
     <div id="walking-directions-map"></div>
@@ -32,7 +32,7 @@
   <div id="address-input-container">
     <%= form_with(url: "/", id: "address-input-form") do %>
     <%= text_field_tag "address", nil, placeholder:"Street Address", id: "street-input", required: true %>
-    <%= text_field_tag "city", nil, placeholder:"City", id: "city-input", required: true %>
+    <%= text_field_tag "city", nil, placeholder:"City", id: "city-input" %>
     <%= text_field_tag "zip", nil, placeholder:"Zip Code", id: "zip-input" %>
     <%= submit_tag "Find Bin", id:"find-bin-button", class: "main-button" %>
     <% end %>

@@ -19,6 +19,7 @@ class WelcomeController < ApplicationController
   end
 
   def fetch_coords_and_bin
+    bin_params[:city] = 'New York' if bin_params[:city].empty?
     address = bin_params['street'] + ', ' + bin_params['city'] + ', ' + bin_params['zip']
     address_data = Geokit::Geocoders::GoogleGeocoder.geocode address
     @address_coordinates = Geokit::LatLng.new(address_data.lat, address_data.lng)
