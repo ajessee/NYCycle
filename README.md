@@ -1,4 +1,4 @@
-![NYCycle](https://github.com/utahrim/Re/blob/master/app/assets/images/nycycle.png)
+![NYCycle](https://github.com/ajessee/NYCycle/blob/master/app/assets/images/nycycle.svg)
 
 # [NYCycle](https://nycycle-1.herokuapp.com/) 
 
@@ -6,19 +6,14 @@ NYCycle is a web application that uses geolocation technology to allow you to lo
 
 You can use NYCycle to find the closest recycling bin to your geolocation or find closest recycling bin to a street address that you provide. Once you submit your choice, the app will render a street map that marks both your and the bin's location, walking directions to the bin's location, and a street view of the location of the bin.
 
-The app is written in Rails 4 and currently deployed in production using Heroku. 
+The app is written in Rails 6 and currently deployed in production using Heroku. 
 
 ## Features:
 
 * Mobile-first design.
 * Single page application.
 * Geolocation using mobile phone or browser.
-* Spinner appears during AJAX request to let user know that map is loading.
-
-## Future Features:
-
-* Ability to display multiple recycling bins at once in relation to user.
-* Add in additional sources of data including recycling centers, compost pick-up, and e-waste recycling.
+* Logo animates to spin arrows during Google Maps request to let user know that map is loading.
 
 ## Technical Specifications:
 
@@ -30,4 +25,17 @@ The app is written in Rails 4 and currently deployed in production using Heroku.
 * Uses Geokit Rails gem to calculate distance and find closest recycling bin to user's location or inputted address.
 * Submits geolocation of user and closest bin to Google Maps API using API key stored in Heroku environment variables.
 * Requests map with both points, as well as walking directions and street view, renders these elements for user.
-* Uses Foundation 6 framework for front end design.
+
+## Major Refactoring March 2020:
+
+* Upgraded to Rails 6
+* Remove Foundation 6 dependency, using vanilla CSS instead.
+* Remove JQuery dependency, using vanilla Javascript instead.
+* Replace PNG logo with SVG logo
+* Replace CSS spinner, now animating the circle in the SVG logo during map requests - looks so much cooler!
+
+## Future Features:
+
+* When user's geolocation is more than 20 miles outside of NYC, present them option to use list of NYC Historical Landmarks instead.
+* Give user option to see multiple recycling bins within a chosen radius of their location.
+* Add in additional sources of data including recycling centers, compost pick-up, and e-waste recycling.
