@@ -25,10 +25,12 @@ const setUpApp = function () {
     binLng: null,
     userLat: null,
     userLng: null,
+    landmarkLat: null,
+    landmarkLng: null,
     inNYC: null,
 
-    // Get user's geolocation
-    whereAmI: function () {
+    // Get coords of closest bin to user's geolocation
+    closestBinToUser: function () {
       let app = this;
 
       return new Promise((resolve, reject) => {
@@ -46,14 +48,14 @@ const setUpApp = function () {
             lng: app.userLng
           };
           fetch('/welcome/fetch_closest_bin', {
-              method: 'POST',
-              headers: {
-                'X-Requested-With': 'XMLHttpRequest',
-                'X-CSRF-Token': app.csrfToken,
-                'Content-Type': 'application/json'
-              },
-              body: JSON.stringify(userLocation)
-            })
+            method: 'POST',
+            headers: {
+              'X-Requested-With': 'XMLHttpRequest',
+              'X-CSRF-Token': app.csrfToken,
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(userLocation)
+          })
             .then((response) => {
               return response.json();
             })
@@ -76,19 +78,19 @@ const setUpApp = function () {
         function error(error) {
           switch (error.code) {
             case error.PERMISSION_DENIED:
-              app.toggleMessage(true, 'Looks like you denied access to your geolocation. Please use address form instead' , 'error');
+              app.toggleMessage(true, 'Looks like you denied access to your geolocation. Please use address form instead', 'error');
               app.toggleSpinner(false);
               break;
             case error.POSITION_UNAVAILABLE:
-              app.toggleMessage(true, 'Your location information is unavaiable. Please use address form instead' , 'error');
+              app.toggleMessage(true, 'Your location information is unavaiable. Please use address form instead', 'error');
               app.toggleSpinner(false);
               break;
             case error.TIMEOUT:
-              app.toggleMessage(true, 'The request to get your location timed out. Please use address form instead' , 'error');
+              app.toggleMessage(true, 'The request to get your location timed out. Please use address form instead', 'error');
               app.toggleSpinner(false);
               break;
             case error.UNKNOWN_ERROR:
-              app.toggleMessage(true, 'Weird. We have an error that we cannot figure out. Please use address form instead' , 'error');
+              app.toggleMessage(true, 'Weird. We have an error that we cannot figure out. Please use address form instead', 'error');
               app.toggleSpinner(false);
           }
           if (app.userLocationButton.getAttribute('disabled') === 'true') {
@@ -104,8 +106,8 @@ const setUpApp = function () {
       })
     },
 
-    //Gets geolocation based on address
-    whereIsThis: function (addressForm) {
+    // Get coords of closest bin to address provided
+    closestBinToAddress: function (addressForm) {
       let self = this;
       return new Promise((resolve, reject) => {
         let address = {
@@ -115,14 +117,14 @@ const setUpApp = function () {
         }
 
         fetch('/welcome/fetch_coords_and_bin', {
-            method: 'POST',
-            headers: {
-              'X-Requested-With': 'XMLHttpRequest',
-              'X-CSRF-Token': self.csrfToken,
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(address)
-          })
+          method: 'POST',
+          headers: {
+            'X-Requested-With': 'XMLHttpRequest',
+            'X-CSRF-Token': self.csrfToken,
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(address)
+        })
           .then((response) => {
             return response.json();
           })
@@ -137,7 +139,40 @@ const setUpApp = function () {
             reject(exception);
           });
       })
+    },
 
+    // Get coords of closest bin to landmark selected
+    closestBinToLandmark: function (landmarkForm) {
+      let self = this;
+      return new Promise((resolve, reject) => {
+        
+        let landmark = {
+          landmark_id: landmarkForm.querySelector('#welcome_landmark_id').value
+        }
+
+        fetch('/welcome/fetch_closest_bin_to_landmark', {
+          method: 'POST',
+          headers: {
+            'X-Requested-With': 'XMLHttpRequest',
+            'X-CSRF-Token': self.csrfToken,
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(landmark)
+        })
+          .then((response) => {
+            return response.json();
+          })
+          .then((data) => {
+            self.binLat = data.binLat;
+            self.binLng = data.binLng;
+            self.landmarkLat = data.landmarkLat;
+            self.landmarkLng = data.landmarkLng;
+            resolve("Landmark and User Location Set");
+          })
+          .catch(function (exception) {
+            reject(exception);
+          });
+      })
     },
 
     //Hide and show address form
@@ -164,13 +199,20 @@ const setUpApp = function () {
 
     addLinkToLogo: function () {
       let app = window.NYCycle.mainApp;
-      app.logoLink.href="javascript:location.reload(true)"
+      app.logoLink.href = "javascript:location.reload(true)"
       app.logoLink.classList.remove('disabled');
       app.logoLink.classList.add('enabled');
     },
 
-    getMainMap: function () {
+    getMainMap: function (landmark = false) {
+      let arguments 
       let app = window.NYCycle.mainApp;
+      if (landmarks) {
+
+      } else {
+
+      }
+
       window.NYCycle.maps.initMap(app.userLat, app.userLng, app.binLat, app.binLng)
         .then(function () {
           app.setMapsReadyState();
@@ -359,7 +401,7 @@ const setUpApp = function () {
       app.toggleSpinner(true);
       // Show info panel
       app.toggleMessage(true, 'Getting maps...', 'request');
-      if (button.id ==='user-location') {
+      if (button && button.id === 'user-location') {
         app.addressLocationButton.setAttribute('disabled', 'true');
       } else {
         app.userLocationButton.setAttribute('disabled', 'true');
@@ -367,6 +409,19 @@ const setUpApp = function () {
       }
     },
 
+    addLandmarksFormEventListener: function () {
+      let app = window.NYCycle.mainApp;
+      app.landmarksForm = document.querySelector('#landmark-select-form');
+      app.landmarksForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        app.setPendingState();
+        app.closestBinToLandmark(app.landmarksForm)
+          .then(mainApp.getMainMap)
+          .catch(function (exception) {
+            console.log(exception)
+          })
+      })
+    }
   }
 
   mainApp.mapButton.addEventListener('click', function (e) {
@@ -388,22 +443,25 @@ const setUpApp = function () {
     e.preventDefault();
     mainApp.toggleAddressForm(true);
     mainApp.setPendingState(mainApp.addressLocationButton);
-    mainApp.whereIsThis(mainApp.addressInputForm)
+    mainApp.closestBinToAddress(mainApp.addressInputForm)
       .then(mainApp.getMainMap)
       .catch(function (exception) {
         console.log(exception)
       })
   })
 
+  mainApp.addLandmarksFormEventListener
+
   mainApp.userLocationButton.addEventListener('click', function (e) {
     mainApp.setPendingState(this);
-    mainApp.whereAmI()
+    mainApp.closestBinToUser()
       .then(mainApp.getMainMap)
       .catch(function (exception) {
         if (typeof exception === "object" && exception.distanceToBin) {
           if (!exception.inNYC) {
             mainApp.toggleSpinner(false);
-            mainApp.toggleMessage(true, exception.message , 'info', true);
+            mainApp.toggleMessage(true, exception.message, 'info', true);
+            mainApp.addLandmarksFormEventListener();
             // Write function to call the server to get bin location and then call google maps function
             // Instead of form in exception.message actually calling the backend
             // Use event listener on that form to trigger the call.

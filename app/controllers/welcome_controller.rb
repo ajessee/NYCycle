@@ -39,6 +39,8 @@ class WelcomeController < ApplicationController
         render json: {
           binLat: @bin.latitude,
           binLng: @bin.longitude,
+          landmarkLat: @landmark.latitude,
+          landmarkLng: @landmark.longitude
         }
       }
     end
