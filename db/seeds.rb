@@ -7,4 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 include ParserHelper
 
-BINS ||= ParserHelper.get_data
+BINS ||= ParserHelper.get_bins
+LANDMARKS ||= ParserHelper.get_landmarks

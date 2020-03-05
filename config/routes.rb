@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   get 'welcome/hello'
   post 'welcome/fetch_closest_bin', to: 'welcome#fetch_closest_bin'
   post 'welcome/fetch_coords_and_bin', to: 'welcome#fetch_coords_and_bin'
+  post 'welcome/fetch_closest_bin_to_landmark', to: 'welcome#fetch_closest_bin_to_landmark'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

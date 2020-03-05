@@ -61,6 +61,14 @@ const setUpApp = function () {
               app.binLat = data.binLat;
               app.binLng = data.binLng;
               app.inNYC = data.in_NYC;
+              app.distanceToBin = data.distanceToBin;
+              if (!app.inNYC) {
+                reject({
+                  "inNYC": false,
+                  "distanceToBin": app.distanceToBin.toString(),
+                  "message": data.html
+                })
+              }
               resolve("Bin Data Set");
             });
         };
@@ -292,7 +300,7 @@ const setUpApp = function () {
       }
     },
 
-    toggleMessage: function (on, message = null, state = null) {
+    toggleMessage: function (on, message = null, state = null, html = false) {
       let app = window.NYCycle.mainApp;
       app.messageContainer.classList.remove('visible');
       app.messageContainer.classList.add('hidden');
@@ -329,11 +337,15 @@ const setUpApp = function () {
         default:
           break;
       }
-      messageTextContainer.textContent = message;
-      messageTextContainer.style.color = textColor;
-      messageTextContainer.classList.add(textClass);
-      messageDiv.innerHTML = icon;
-      messageDiv.appendChild(messageTextContainer);
+      if (html) {
+        messageDiv.innerHTML = icon + message;
+      } else {
+        messageDiv.innerHTML = icon;
+        messageTextContainer.textContent = message;
+        messageTextContainer.style.color = textColor;
+        messageTextContainer.classList.add(textClass);
+        messageDiv.appendChild(messageTextContainer);
+      }
       messageDiv.style.backgroundColor = backgroundColor;
       messageDiv.setAttribute('id', 'message-div')
       app.messageContainer.appendChild(messageDiv);
@@ -388,7 +400,18 @@ const setUpApp = function () {
     mainApp.whereAmI()
       .then(mainApp.getMainMap)
       .catch(function (exception) {
-        console.log(exception)
+        if (typeof exception === "object" && exception.distanceToBin) {
+          if (!exception.inNYC) {
+            mainApp.toggleSpinner(false);
+            mainApp.toggleMessage(true, exception.message , 'info', true);
+            // Write function to call the server to get bin location and then call google maps function
+            // Instead of form in exception.message actually calling the backend
+            // Use event listener on that form to trigger the call.
+            // Probably can just set event listener here
+          }
+        } else {
+          console.log(exception)
+        }
       })
   })
 

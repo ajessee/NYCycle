@@ -1,0 +1,8 @@
+<p>It looks like you are <%= distance_to_bin %> miles away from NYC.</p>
+<p>We can show you your closest recycling bin, but it might be more fun to see the closest bin to a historic NYC landmark!</p>
+<p>If you want to do that, use this list to select one and then click submit</p>
+ <%= form_with(url: welcome_fetch_closest_bin_to_landmark_path, id: "landmark-select-form") do %>
+    <%= select_tag 'welcome[landmark_id]', options_for_select(landmarks.collect{ |lm| [lm.name, lm.id] }) %>
+    <%= submit_tag "Submit", id:"find-bin-by-landmark-button", class: "main-button" %>
+  <% end %>
+<p>Otherwise, click here to continue and find the closest bin to your current location</p>

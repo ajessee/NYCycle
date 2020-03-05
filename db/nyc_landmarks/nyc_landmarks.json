@@ -1,691 +1,693 @@
-{"nyc-landmarks" :
-[{
-"name": "69th Regiment Armory",
-"lat": "40.741648",
-"lng": "-73.983607",
-"description": "Home of the watershed Armory Show in 1913, which introduced America to modern art"
-},
 {
-"name": "Admiral David Glasgow Farragut Gravesite",
-"lat": "40.892165",
-"lng": "-73.865860",
-"description": "Only intact known property directly associated with Admiral David Farragut"
-},
-{
-"name": "African Burial Ground",
-"lat": "40.714558",
-"lng": "-74.004384",
-"description": "Dedicated as National Monument on October 5, 2007; burial site in Lower Manhattan of over 400 Africans from the 17th and 18th "
-},
-{
-"name": "Ambrose (lightship)",
-"lat": "40.704844",
-"lng": "-74.002467",
-"description": "Lightship, several miles offshore, that marked Ambrose Channel into New York Harbor, now at South Street Seaport Museum."
-},
-{
-"name": "American Stock Exchange Building",
-"lat": "40.7090",
-"lng": "-74.0126",
-"description": "World-class stock exchanges dating back to colonial times. Building area 181,725sq.ft.<ref>{{cite web|title=New York Curb Exchange|"
-},
-{
-"name": "Louis Armstrong House",
-"lat": "40.754556",
-"lng": "-73.861557",
-"description": "Home of jazz legend Louis Armstrong for 28 years"
-},
-{
-"name": "Chester A. Arthur House",
-"lat": "40.74279",
-"lng": "-73.982196",
-"description": "Home of President Chester A. Arthur; site of his inaugural oath"
-},
-{
-"name": "Alice Austen House",
-"lat": "40.615129",
-"lng": "-74.062952",
-"description": "Home of photographer Alice Austen, now a museum"
-},
-{
-"name": "Bartow-Pell Mansion",
-"lat": "40.871748",
-"lng": "-73.805578",
-"description": "19th-century mansion in largest New York City park"
-},
-{
-"name": "Bayard-Condict Building",
-"lat": "40.7263",
-"lng": "-73.9956",
-"description": "Only Louis Sullivan building in New York City; one of the first steel skeleton skyscrapers. Total building area stands at 104,"
-},
-{
-"name": "Bell Laboratories Building",
-"lat": "40.736852",
-"lng": "-74.009871",
-"description": "Bell Labs work here included experimental  phonograph record, vacuum tubes, talking movies (1923), black and white and color TV, "
-},
-{
-"name": "Brooklyn Bridge",
-"lat": "40.706344",
-"lng": "-73.997439",
-"description": "The Brooklyn Bridge is a hybrid cable-stayed/suspension bridge in New York City, spanning the East River between the boroughs of Manhattan and Brooklyn."
-},
-{
-"name": "Brooklyn Heights Historic District",
-"lat": "40.696667",
-"lng": "-73.996667",
-"description": "Exemplary collection of 19th-century architectural styles; first historic district in New York City"
-},
-{
-"name": "Brooklyn Historical Society Building",
-"lat": "40.694761",
-"lng": "-73.992794",
-"description": "One of the few remaining buildings by George B. Post; innovative structural system"
-},
-{
-"name": "Ralph Johnson Bunche House",
-"lat": "40.70646",
-"lng": "-73.836998",
-"description": "Home of Ralph Johnson Bunche, eminent African-American diplomat and Undersecretary General of United Nations"
-},
-{
-"name": "Carnegie Hall",
-"lat": "40.764944",
-"lng": "-73.980139",
-"description": "One of the most famous music venues in the world"
-},
-{
-"name": "Andrew Carnegie Mansion",
-"lat": "40.784421",
-"lng": "-73.95789",
-"description": "Home of Andrew Carnegie, now the Cooper-Hewitt, National Design Museum"
-},
-{
-"name": "Central Park",
-"lat": "40.781944",
-"lng": "-73.966111",
-"description": "The Green Lung of the city; one of the most visited city parks in the world; designed by Frederick Law Olmsted and Calvert "
-},
-{
-"name": "Central Synagogue",
-"lat": "40.759592",
-"lng": "-73.970473",
-"description": "Oldest synagogue continuously in use by a New York City Jewish congregation; built in a Moorish Revival style to recognize "
-},
-{
-"name": "Chamber of Commerce Building",
-"lat": "40.709434",
-"lng": "-74.009871",
-"description": "New York City's Chamber of Commerce; established in 1768; prototype for the organization"
-},
-{
-"name": "Chrysler Building",
-"lat": "40.7517",
-"lng": "-73.9753",
-"description": "Art Deco skyscraper; distinctive feature of Manhattan skyline; at one point world's tallest building"
-},
-{
-"name": "Church of the Ascension",
-"lat": "40.733647",
-"lng": "-73.995492",
-"description": "Early church design by Richard Upjohn; valuable interior artwork"
-},
-{
-"name": "City Hall",
-"lat": "40.7127",
-"lng": "-74.0059",
-"description": "Oldest city hall in U.S. still in use as main municipal government building"
-},
-{
-"name": "Conference House",
-"lat": "40.503072",
-"lng": "-74.253159",
-"description": "Only surviving pre-Revolutionary War manor house in New York City; site of Staten Island Peace Conference|unsuccessful peace "
-},
-{
-"name": "Will Marion Cook House",
-"lat": "40.818096",
-"lng": "-73.942924",
-"description": "Home of the leading black composer and musician Will Marion Cook"
-},
-{
-"name": "Cooper Union",
-"lat": "40.729405",
-"lng": "-73.990417",
-"description": "Pioneering adult education center; site of famous anti-slavery speech by Abraham Lincoln"
-},
-{
-"name": "Daily News Building",
-"lat": "40.749544",
-"lng": "-73.973492",
-"description": "First modernistic free-standing skyscraper designed by Raymond Hood"
-},
-{
-"name": "Dakota Apartments",
-"lat": "40.776642",
-"lng": "-73.976269",
-"description": "Combination of Renaissance architectural styles by Henry Hardenbergh; setting for ''Rosemary's Baby (film)|Rosemary's Baby'' "
-},
-{
-"name": "Dyckman House",
-"lat": "40.8674",
-"lng": "-73.9233",
-"description": "Only remaining farmhouse in Manhattan"
-},
-{
-"name": "Eldridge Street Synagogue",
-"lat": "40.715007",
-"lng": "-73.993982",
-"description": "One of the oldest synagogues in the U.S.; first built by Jews from Eastern Europe"
-},
-{
-"name": "Duke Ellington House",
-"lat": "40.832269",
-"lng": "-73.94096",
-"description": "Duke Ellington|Ellington, the legendary jazz composer and bandleader, lived in Apartment 4A from 1939–61"
-},
-{
-"name": "Empire State Building",
-"lat": "40.748433",
-"lng": "-73.985694",
-"description": "World's tallest building from 1931–1972 and internationally recognized symbol of New York City"
-},
-{
-"name": "Equitable Building",
-"lat": "40.709722",
-"lng": "-74.011111",
-"description": "One of the earliest skyscrapers in Manhattan; profoundly influenced later skyscraper design"
-},
-{
-"name": "Hamilton Fish House",
-"lat": "40.730052",
-"lng": "-73.988583",
-"description": "Home of Hamilton Fish, future Governor and Senator of New York"
-},
-{
-"name": "Flatiron Building",
-"lat": "40.741111",
-"lng": " -73.989722",
-"description": "Considered the World's first skyscraper. Distinctive triangular building at Madison Square; world's tallest 1901-1911"
-},
-{
-"name": "Founder's Hall, The Rockefeller University",
-"lat": "40.762471",
-"lng": "-73.955074",
-"description": "Building marked the start of John D. Rockefeller Jr.'s putting the vast family fortune to philanthropic purposes"
-},
-{
-"name": "The Frick Collection and Frick Art Reference Library Building ",
-"lat": "40.771261",
-"lng": "-73.967241",
-"description": "The Frick Collection is an art museum located in the Henry Clay Frick House that houses the collection of industrialist Henry Clay Frick"
-},
-{
-"name": "Governors Island",
-"lat": "40.691389",
-"lng": "-74.016111",
-"description": "Governors Island is a 172-acre island in New York Harbor."
-},
-{
-"name": "Grace Church",
-"lat": "40.731667",
-"lng": "-73.991944",
-"description": "Gothic Revival architecture|Gothic Revival masterpiece designed by James Renwick, Jr."
-},
-{
-"name": "Grand Central Terminal",
-"lat": "40.7528",
-"lng": "-73.976522",
-"description": "Beaux-Arts architecture; historic rail gateway to New York City; largest train station in the world by number of platforms"
-},
-{
-"name": "Green-Wood Cemetery",
-"lat": "40.6522",
-"lng": "-73.9911",
-"description": "Popular tourist attraction in the 1850s; most famous New Yorkers who died during the second half of the nineteenth century buried "
-},
-{
-"name": "Hamilton Grange National Memorial",
-"lat": "40.821389",
-"lng": "-73.947222",
-"description": "Home of Alexander Hamilton: military officer, lawyer, member of the United States Constitutional Convention, American "
-},
-{
-"name": "Solomon R. Guggenheim Museum",
-"lat": "40.782883",
-"lng": "-73.958992",
-"description": " "
-},
-{
-"name": "Henry Street Settlement and Neighborhood Playhouse",
-"lat": "40.713889",
-"lng": "-73.985278",
-"description": "One of the nation's first settlement house|settlement homes where new immigrants and the poor could find assistance"
-},
-{
-"name": "Matthew Henson Residence",
-"lat": "40.825444",
-"lng": "-73.93875",
-"description": "Home of Matthew Henson, African-American polar explorer who may have been the first to reach the North Pole"
-},
-{
-"name": "Hispanic Society of America",
-"lat": "40.833521",
-"lng": "-73.946514",
-"description": "Museum of Iberian Art"
-},
-{
-"name": "Holland Tunnel",
-"lat": "40.7275",
-"lng": "-74.021389",
-"description": "Tunnel underneath the Hudson River, connecting Manhattan and New Jersey; civil engineering landmark; one of the "
-},
-{
-"name": "USS Intrepid",
-"lat": "40.7648",
-"lng": "-74.001",
-"description": "One of the most active U.S. ships during World War II; today a museum moored along the West Side"
-},
-{
-"name": "James Weldon Johnson Residence",
-"lat": "40.815278",
-"lng": "-73.943056",
-"description": "Harlem home of African-American artist-activist James Weldon Johnson"
-},
-{
-"name": "King Manor",
-"lat": "40.703021",
-"lng": "-73.80376",
-"description": "Home of Rufus King, a signer of Declaration of Independence and early U.S. Senator from New York"
-},
-{
-"name": "Lettie G. Howard (schooner)",
-"lat": "40.706111",
-"lng": "-74.003333",
-"description": "Lettie G. Howard, formerly Mystic C and Caviare, is a wooden Fredonia schooner built in 1893 in Essex, Massachusetts, USA"
-},
-{
-"name": "Lorillard Snuff Mill",
-"lat": "40.859681",
-"lng": "-73.876174",
-"description": "The Lorillard Snuff Mill now known as the Lillian and Amy Goldman Stone Mill, is the oldest existing tobacco manufacturing building in the United States"
-},
-{
-"name": "Low Memorial Library",
-"lat": "40.80826",
-"lng": "-73.96188",
-"description": "First building on Morningside Heights campus; capped by largest freestanding granite dome in U.S."
-},
-{
-"name": "R. H. Macy and Company Store (Macy's)",
-"lat": "40.750278",
-"lng": "-73.988333",
-"description": "Largest department store in world for many years"
-},
-{
-"name": "McGraw Hill Building",
-"lat": "40.757222",
-"lng": "-73.991111",
-"description": "Landmark Art Deco building; first U.S. building in International style (architecture)|International Style"
-},
-{
-"name": "Claude McKay Residence",
-"lat": "40.814167",
-"lng": "-73.94166",
-"description": "The Harlem YMCA, whose residents included African-American writer Claude McKay"
-},
-{
-"name": "Metropolitan Life Insurance Company Tower",
-"lat": "40.74124",
-"lng": "-73.9874",
-"description": "Tallest building in the world 1909-13; still part of the skyline a century later"
-},
-{
-"name": "Metropolitan Museum of Art",
-"lat": "40.77891",
-"lng": "-73.96367",
-"description": "One of the world's most important and prestigious art museums"
-},
-{
-"name": "J. Pierpont Morgan Library",
-"lat": "40.748803",
-"lng": "-73.981556",
-"description": "Office, Library, and now Museum of J. P. Morgan; the Panic of 1907 ended in the Library"
-},
-{
-"name": "Morris-Jumel Mansion",
-"lat": "40.834528",
-"lng": "-73.938611",
-"description": "Oldest building in Manhattan"
-},
-{
-"name": "National City Bank Building",
-"lat": "40.706039",
-"lng": "-74.009174",
-"description": "Home to one of the country's largest and most important banks since 1908"
-},
-{
-"name": "New York Amsterdam News Building",
-"lat": "40.814944",
-"lng": "-73.94472",
-"description": "Influential black newspaper the ''New York Amsterdam News'' was published here 1916-38"
-},
-{
-"name": "New York Botanical Garden",
-"lat": "40.863611",
-"lng": "-73.878333",
-"description": "One of the world's leading botanical gardens, with the largest herbarium in the US and second largest in the world after the ["
-},
-{
-"name": "New York Cotton Exchange",
-"lat": "40.704444",
-"lng": "-74.010167",
-"description": "First commodity market in the U.S.; now 1 Hanover Square"
-},
-{
-"name": "New York Life Building",
-"lat": "40.742778",
-"lng": "-73.985556",
-"description": "Last significant Cass Gilbert skyscraper in Manhattan"
-},
-{
-"name": "New York Public Library",
-"lat": "40.753333",
-"lng": "-73.982222",
-"description": "One of the largest and most important libraries in the U.S.; listing is for main branch building."
-},
-{
-"name": "New York Stock Exchange",
-"lat": "40.706833",
-"lng": "-74.011028",
-"description": "One of the first securities markets in the U.S.; still the world's largest"
-},
-{
-"name": "New York Studio School of Drawing, Painting and Sculpture",
-"lat": "40.73295",
-"lng": "-73.998306",
-"description": "Original home of the Whitney Museum, the first devoted to 20th-century American art"
-},
-{
-"name": "New York Yacht Club",
-"lat": "40.755556",
-"lng": "-73.981556",
-"description": "Oldest yachting club in U.S.; longtime home of the America's Cup"
-},
-{
-"name": "Old Merchant's House",
-"lat": "40.7276",
-"lng": "-73.992386",
-"description": "Nineteenth-century family home; preserved inside and out"
-},
-{
-"name": "Old Quaker Meeting House",
-"lat": "40.763028",
-"lng": "-73.830365",
-"description": "Only surviving 17th-century ecclesiastical frame building in New York; in almost continuous use since 1696"
-},
-{
-"name": "Philosophy Hall",
-"lat": "40.806111",
-"lng": "-73.9625",
-"description": "Edwin Armstrong developed FM radio in this Columbia University building"
-},
-{
-"name": "Players Club",
-"lat": "40.737503",
-"lng": "-73.987058",
-"description": "Extensive collection of art and theater memorabilia; interior redone by Stanford White"
-},
-{
-"name": "Plaza Hotel",
-"lat": "40.764712",
-"lng": "-73.974574",
-"description": "French Renaissance-style building; outstanding example of American hotel architecture; symbol of elegance; visible from much "
-},
-{
-"name": "Plymouth Church of the Pilgrims",
-"lat": "40.699272",
-"lng": "-73.993556",
-"description": "Important station on Underground Railroad when Henry Ward Beecher was pastor"
-},
-{
-"name": "Pupin Physics Laboratory, Columbia University",
-"lat": "40.810064",
-"lng": "-73.961533",
-"description": "Columbia University building; site of first nuclear fission|splitting of uranium atom in U.S. and other milestones in "
-},
-{
-"name": "Quarters A, Brooklyn Navy Yard",
-"lat": "40.702494",
-"lng": "-73.981114",
-"description": "Home to Matthew C. Perry|Matthew Perry at the time of his opening of Japan"
-},
-{
-"name": "Paul Robeson Home",
-"lat": "40.834361",
-"lng": "-73.938972",
-"description": "Home of legendary African-American actor and activist Paul Robeson"
-},
-{
-"name": "Jackie Robinson House",
-"lat": "40.648292",
-"lng": "-73.915081",
-"description": "Home of baseball great Jackie Robinson"
-},
-{
-"name": "Rockefeller Center",
-"lat": "40.758611",
-"lng": "-73.979167",
-"description": "Rockefeller Center is a large complex consisting of 19 commercial buildings covering 22 acres between 48th Street and 51st Street in Midtown Manhattan, New York City."
-},
-{
-"name": "Sailors' Snug Harbor",
-"lat": "40.6425",
-"lng": "-74.102778",
-"description": "First and only home for retired merchant seamen in U.S."
-},
-{
-"name": "St. Ann and the Holy Trinity Church",
-"lat": "40.694583",
-"lng": "-73.992975",
-"description": "Site of first figural stained-glass windows in U.S."
-},
-{
-"name": "St. George's Episcopal Church",
-"lat": "40.734397",
-"lng": "-73.984964",
-"description": "Home church of Harry Thacker Burleigh, African-American singer who helped establish the Spiritual (music)|spiritual in the "
-},
-{
-"name": "St. Patrick's Cathedral",
-"lat": "40.758611",
-"lng": "-73.976389",
-"description": "First large-scale medieval-style church built in U.S."
-},
-{
-"name": "St. Paul's Chapel",
-"lat": "40.711394",
-"lng": "-74.009947",
-"description": "One of the few surviving colonial-era churches in city; George Washington worshipped here following his inauguration; site of "
-},
-{
-"name": "Margaret Sanger Clinic",
-"lat": "40.738056",
-"lng": "-73.994167",
-"description": "Clinic where Margaret Sanger dispensed birth control"
-},
-{
-"name": "Gen. Winfield Scott House",
-"lat": "40.735",
-"lng": "-73.995833",
-"description": "Home of Winfield Scott, heroic general in the U.S.-Mexican War and later presidential candidate"
-},
-{
-"name": "Seventh Regiment Armory",
-"lat": "40.7675",
-"lng": "-73.966111",
-"description": "One of the most impressive collections of 1880s interior decoration outside of a museum; only armory actually owned by the unit "
-},
-{
-"name": "Harry F. Sinclair House",
-"lat": "40.77675",
-"lng": "-73.963611",
-"description": "Harry F. Sinclair, the oil industrialist, lived here from 1918–1930; now part of the Ukrainian Institute; often used in ["
-},
-{
-"name": "Alfred E. Smith House",
-"lat": "40.713208",
-"lng": "-73.997962",
-"description": "Home of four time New York State governor, Alfred E. Smith (and later presidential candidate) from 1907 to 1923"
-},
-{
-"name": "SoHo-Cast Iron Historic District",
-"lat": "40.724315",
-"lng": "-74.001292",
-"description": "Believed to be the largest existing collection of late 19th-century cast iron facades in the world"
-},
-{
-"name": "A. T. Stewart Company Store",
-"lat": "40.71425",
-"lng": "-74.006111",
-"description": "Site of the first American department store (now known as the 'New York Sun' building)"
-},
-{
-"name": "Stonewall",
-"lat": "40.733797",
-"lng": "-74.0021",
-"description": "Site of 1969 Stonewall riots which began gay rights movement"
-},
-{
-"name": "St. Bartholomew's Church and Community House",
-"lat": "40.757222",
-"lng": "-73.973611",
-"description": "A pivotal example of the work of Bertram Grosvenor Goodhue and an outstanding example of early 20th-century ecclesiastical "
-},
-{
-"name": "Surrogate's Court",
-"lat": "40.713511",
-"lng": "-74.004589",
-"description": "Probate Courthouse across from NYC's city hall"
-},
-{
-"name": "Tenement Building at 97 Orchard Street",
-"lat": "40.7185",
-"lng": "-73.990139",
-"description": "Preserved tenement building that housed hundreds of immigrants; now the heart of the Lower East Side Tenement Museum."
-},
-{
-"name": "Third Judicial District Courthouse",
-"lat": "40.734722",
-"lng": "-73.999167",
-"description": "Originally built as the Third Judicial District Courthouse; faced with demolition, public outcry led to its reuse as a branch of "
-},
-{
-"name": "Tiffany and Company Building",
-"lat": "40.75",
-"lng": "-73.981306",
-"description": "Served as the home of Tiffany and Company from 1905 through 1940"
-},
-{
-"name": "Samuel J. Tilden House",
-"lat": "40.7375",
-"lng": "-73.987222",
-"description": "Home of Samuel J. Tilden, former New York State governor and loser of the bitter 1876 presidential election"
-},
-{
-"name": "The Town Hall",
-"lat": "40.755986",
-"lng": "-73.984712",
-"description": "America's Town Meetings of the Air radio programs from here in the 1930s created public-affairs media."
-},
-{
-"name": "Triangle Shirtwaist Factory",
-"lat": "40.730011",
-"lng": "-73.995817",
-"description": "Site of the Triangle Shirtwaist Factory fire, one of the worst industrial disasters in the US, which led to many workplace "
-},
-{
-"name": "Trinity Church",
-"lat": "40.708056",
-"lng": "-74.012222",
-"description": "Historic church which looks down Wall Street"
-},
-{
-"name": "Old New York County Courthouse",
-"lat": "40.713167",
-"lng": "-74.006",
-"description": "Historic courthouse, more commonly known as the Tweed Courthouse, connected to Tammany Hall, now used by NYC's Department of "
-},
-{
-"name": "Union Square",
-"lat": "40.735556",
-"lng": "-73.990556",
-"description": "The political heart of Manhattan; many protests begin or end here"
-},
-{
-"name": "United Charities Building",
-"lat": "40.739389",
-"lng": "-73.986389",
-"description": "Built in 1893 by a wealthy businessman in order to provide his favorite charities a low cost location for their operations"
-},
-{
-"name": "United Workers Cooperatives",
-"lat": "40.866389",
-"lng": "-73.869722",
-"description": "Built in 1926 by the United Workers' Association to improve the living standards of its members, many of whom lived in squalid "
-},
-{
-"name": "U.S. Customhouse",
-"lat": "40.704294",
-"lng": "-74.013773",
-"description": "Cass Gilbert designed Customhouse for New York Harbor; now part of the Smithsonian Institution"
-},
-{
-"name": "University Heights Campus (Bronx Community College of the City University of New York)",
-"lat": "40.857778",
-"lng": "-73.912222",
-"description": "Collection of Beaux Arts architecture|Beaux Arts buildings by Stanford White is one of the best examples of that style "
-},
-{
-"name": "Van Cortlandt House",
-"lat": "40.89",
-"lng": "-73.896389",
-"description": "Mansion for the Van Cortlandt family built in 1748 and used during the American Revolution"
-},
-{
-"name": "Voorlezer's House",
-"lat": "40.571417",
-"lng": "-74.1475",
-"description": "Oldest known surviving schoolhouse in America; owned by the Staten Island historical society"
-},
-{
-"name": "Wards Point Archeological Site",
-"lat": "40.498889",
-"lng": "-74.251944",
-"description": "Archaeological site in Conference House Park containing prehistoric remains."
-},
-{
-"name": "Woodlawn Cemetery",
-"lat": "40.889167",
-"lng": "-73.873333",
-"description": "Illustrates transition from rural cemetery to 20th-century styles; notable dead buried here include Robert Moses and R.H. "
-},
-{
-"name": "Woolworth Building",
-"lat": "40.712222",
-"lng": "-74.008056",
-"description": "One of the oldest —and most famous — skyscrapers in New York City; one of the tallest buildings in the New York City"
-},
-{
-"name": "Wyckoff House",
-"lat": "40.644342",
-"lng": "-73.920777",
-"description": "Oldest surviving Dutch saltbox frame house in America"
-},
-{
-"name": "Wyckoff-Bennett Homestead",
-"lat": "40.610851",
-"lng": "-73.951265",
-"description": "Housed Hessian soldiers during the American Revolution"
-}]}
+  "nyc-landmarks": [{
+      "name": "69th Regiment Armory",
+      "latitude": "40.741648",
+      "longitude": "-73.983607",
+      "description": "Home of the watershed Armory Show in 1913, which introduced America to modern art"
+    },
+    {
+      "name": "Admiral David Glasgow Farragut Gravesite",
+      "latitude": "40.892165",
+      "longitude": "-73.865860",
+      "description": "Only intact known property directly associated with Admiral David Farragut"
+    },
+    {
+      "name": "African Burial Ground",
+      "latitude": "40.714558",
+      "longitude": "-74.004384",
+      "description": "Dedicated as National Monument on October 5, 2007; burial site in Lower Manhattan of over 400 Africans from the 17th and 18th "
+    },
+    {
+      "name": "Ambrose (lightship)",
+      "latitude": "40.704844",
+      "longitude": "-74.002467",
+      "description": "Lightship, several miles offshore, that marked Ambrose Channel into New York Harbor, now at South Street Seaport Museum."
+    },
+    {
+      "name": "American Stock Exchange Building",
+      "latitude": "40.7090",
+      "longitude": "-74.0126",
+      "description": "World-class stock exchanges dating back to colonial times. Building area 181,725sq.ft.<ref>{{cite web|title=New York Curb Exchange|"
+    },
+    {
+      "name": "Louis Armstrong House",
+      "latitude": "40.754556",
+      "longitude": "-73.861557",
+      "description": "Home of jazz legend Louis Armstrong for 28 years"
+    },
+    {
+      "name": "Chester A. Arthur House",
+      "latitude": "40.74279",
+      "longitude": "-73.982196",
+      "description": "Home of President Chester A. Arthur; site of his inaugural oath"
+    },
+    {
+      "name": "Alice Austen House",
+      "latitude": "40.615129",
+      "longitude": "-74.062952",
+      "description": "Home of photographer Alice Austen, now a museum"
+    },
+    {
+      "name": "Bartow-Pell Mansion",
+      "latitude": "40.871748",
+      "longitude": "-73.805578",
+      "description": "19th-century mansion in largest New York City park"
+    },
+    {
+      "name": "Bayard-Condict Building",
+      "latitude": "40.7263",
+      "longitude": "-73.9956",
+      "description": "Only Louis Sullivan building in New York City; one of the first steel skeleton skyscrapers. Total building area stands at 104,"
+    },
+    {
+      "name": "Bell Laboratories Building",
+      "latitude": "40.736852",
+      "longitude": "-74.009871",
+      "description": "Bell Labs work here included experimental  phonograph record, vacuum tubes, talking movies (1923), black and white and color TV, "
+    },
+    {
+      "name": "Brooklyn Bridge",
+      "latitude": "40.706344",
+      "longitude": "-73.997439",
+      "description": "The Brooklyn Bridge is a hybrid cable-stayed/suspension bridge in New York City, spanning the East River between the boroughs of Manhattan and Brooklyn."
+    },
+    {
+      "name": "Brooklyn Heights Historic District",
+      "latitude": "40.696667",
+      "longitude": "-73.996667",
+      "description": "Exemplary collection of 19th-century architectural styles; first historic district in New York City"
+    },
+    {
+      "name": "Brooklyn Historical Society Building",
+      "latitude": "40.694761",
+      "longitude": "-73.992794",
+      "description": "One of the few remaining buildings by George B. Post; innovative structural system"
+    },
+    {
+      "name": "Ralph Johnson Bunche House",
+      "latitude": "40.70646",
+      "longitude": "-73.836998",
+      "description": "Home of Ralph Johnson Bunche, eminent African-American diplomat and Undersecretary General of United Nations"
+    },
+    {
+      "name": "Carnegie Hall",
+      "latitude": "40.764944",
+      "longitude": "-73.980139",
+      "description": "One of the most famous music venues in the world"
+    },
+    {
+      "name": "Andrew Carnegie Mansion",
+      "latitude": "40.784421",
+      "longitude": "-73.95789",
+      "description": "Home of Andrew Carnegie, now the Cooper-Hewitt, National Design Museum"
+    },
+    {
+      "name": "Central Park",
+      "latitude": "40.781944",
+      "longitude": "-73.966111",
+      "description": "The Green Lung of the city; one of the most visited city parks in the world; designed by Frederick Law Olmsted and Calvert "
+    },
+    {
+      "name": "Central Synagogue",
+      "latitude": "40.759592",
+      "longitude": "-73.970473",
+      "description": "Oldest synagogue continuously in use by a New York City Jewish congregation; built in a Moorish Revival style to recognize "
+    },
+    {
+      "name": "Chamber of Commerce Building",
+      "latitude": "40.709434",
+      "longitude": "-74.009871",
+      "description": "New York City's Chamber of Commerce; established in 1768; prototype for the organization"
+    },
+    {
+      "name": "Chrysler Building",
+      "latitude": "40.7517",
+      "longitude": "-73.9753",
+      "description": "Art Deco skyscraper; distinctive feature of Manhattan skyline; at one point world's tallest building"
+    },
+    {
+      "name": "Church of the Ascension",
+      "latitude": "40.733647",
+      "longitude": "-73.995492",
+      "description": "Early church design by Richard Upjohn; valuable interior artwork"
+    },
+    {
+      "name": "City Hall",
+      "latitude": "40.7127",
+      "longitude": "-74.0059",
+      "description": "Oldest city hall in U.S. still in use as main municipal government building"
+    },
+    {
+      "name": "Conference House",
+      "latitude": "40.503072",
+      "longitude": "-74.253159",
+      "description": "Only surviving pre-Revolutionary War manor house in New York City; site of Staten Island Peace Conference|unsuccessful peace "
+    },
+    {
+      "name": "Will Marion Cook House",
+      "latitude": "40.818096",
+      "longitude": "-73.942924",
+      "description": "Home of the leading black composer and musician Will Marion Cook"
+    },
+    {
+      "name": "Cooper Union",
+      "latitude": "40.729405",
+      "longitude": "-73.990417",
+      "description": "Pioneering adult education center; site of famous anti-slavery speech by Abraham Lincoln"
+    },
+    {
+      "name": "Daily News Building",
+      "latitude": "40.749544",
+      "longitude": "-73.973492",
+      "description": "First modernistic free-standing skyscraper designed by Raymond Hood"
+    },
+    {
+      "name": "Dakota Apartments",
+      "latitude": "40.776642",
+      "longitude": "-73.976269",
+      "description": "Combination of Renaissance architectural styles by Henry Hardenbergh; setting for ''Rosemary's Baby (film)|Rosemary's Baby'' "
+    },
+    {
+      "name": "Dyckman House",
+      "latitude": "40.8674",
+      "longitude": "-73.9233",
+      "description": "Only remaining farmhouse in Manhattan"
+    },
+    {
+      "name": "Eldridge Street Synagogue",
+      "latitude": "40.715007",
+      "longitude": "-73.993982",
+      "description": "One of the oldest synagogues in the U.S.; first built by Jews from Eastern Europe"
+    },
+    {
+      "name": "Duke Ellington House",
+      "latitude": "40.832269",
+      "longitude": "-73.94096",
+      "description": "Duke Ellington|Ellington, the legendary jazz composer and bandleader, lived in Apartment 4A from 1939–61"
+    },
+    {
+      "name": "Empire State Building",
+      "latitude": "40.748433",
+      "longitude": "-73.985694",
+      "description": "World's tallest building from 1931–1972 and internationally recognized symbol of New York City"
+    },
+    {
+      "name": "Equitable Building",
+      "latitude": "40.709722",
+      "longitude": "-74.011111",
+      "description": "One of the earliest skyscrapers in Manhattan; profoundly influenced latitudeer skyscraper design"
+    },
+    {
+      "name": "Hamilton Fish House",
+      "latitude": "40.730052",
+      "longitude": "-73.988583",
+      "description": "Home of Hamilton Fish, future Governor and Senator of New York"
+    },
+    {
+      "name": "Flatitudeiron Building",
+      "latitude": "40.741111",
+      "longitude": " -73.989722",
+      "description": "Considered the World's first skyscraper. Distinctive triangular building at Madison Square; world's tallest 1901-1911"
+    },
+    {
+      "name": "Founder's Hall, The Rockefeller University",
+      "latitude": "40.762471",
+      "longitude": "-73.955074",
+      "description": "Building marked the start of John D. Rockefeller Jr.'s putting the vast family fortune to philanthropic purposes"
+    },
+    {
+      "name": "The Frick Collection and Frick Art Reference Library Building ",
+      "latitude": "40.771261",
+      "longitude": "-73.967241",
+      "description": "The Frick Collection is an art museum located in the Henry Clay Frick House that houses the collection of industrialist Henry Clay Frick"
+    },
+    {
+      "name": "Governors Island",
+      "latitude": "40.691389",
+      "longitude": "-74.016111",
+      "description": "Governors Island is a 172-acre island in New York Harbor."
+    },
+    {
+      "name": "Grace Church",
+      "latitude": "40.731667",
+      "longitude": "-73.991944",
+      "description": "Gothic Revival architecture|Gothic Revival masterpiece designed by James Renwick, Jr."
+    },
+    {
+      "name": "Grand Central Terminal",
+      "latitude": "40.7528",
+      "longitude": "-73.976522",
+      "description": "Beaux-Arts architecture; historic rail gateway to New York City; largest train station in the world by number of platitudeforms"
+    },
+    {
+      "name": "Green-Wood Cemetery",
+      "latitude": "40.6522",
+      "longitude": "-73.9911",
+      "description": "Popular tourist attraction in the 1850s; most famous New Yorkers who died during the second half of the nineteenth century buried "
+    },
+    {
+      "name": "Hamilton Grange National Memorial",
+      "latitude": "40.821389",
+      "longitude": "-73.947222",
+      "description": "Home of Alexander Hamilton: military officer, lawyer, member of the United States Constitutional Convention, American "
+    },
+    {
+      "name": "Solomon R. Guggenheim Museum",
+      "latitude": "40.782883",
+      "longitude": "-73.958992",
+      "description": " "
+    },
+    {
+      "name": "Henry Street Settlement and Neighborhood Playhouse",
+      "latitude": "40.713889",
+      "longitude": "-73.985278",
+      "description": "One of the nation's first settlement house|settlement homes where new immigrants and the poor could find assistance"
+    },
+    {
+      "name": "Matthew Henson Residence",
+      "latitude": "40.825444",
+      "longitude": "-73.93875",
+      "description": "Home of Matthew Henson, African-American polar explorer who may have been the first to reach the North Pole"
+    },
+    {
+      "name": "Hispanic Society of America",
+      "latitude": "40.833521",
+      "longitude": "-73.946514",
+      "description": "Museum of Iberian Art"
+    },
+    {
+      "name": "Holland Tunnel",
+      "latitude": "40.7275",
+      "longitude": "-74.021389",
+      "description": "Tunnel underneath the Hudson River, connecting Manhattan and New Jersey; civil engineering landmark; one of the "
+    },
+    {
+      "name": "USS Intrepid",
+      "latitude": "40.7648",
+      "longitude": "-74.001",
+      "description": "One of the most active U.S. ships during World War II; today a museum moored along the West Side"
+    },
+    {
+      "name": "James Weldon Johnson Residence",
+      "latitude": "40.815278",
+      "longitude": "-73.943056",
+      "description": "Harlem home of African-American artist-activist James Weldon Johnson"
+    },
+    {
+      "name": "King Manor",
+      "latitude": "40.703021",
+      "longitude": "-73.80376",
+      "description": "Home of Rufus King, a signer of Declaration of Independence and early U.S. Senator from New York"
+    },
+    {
+      "name": "Lettie G. Howard (schooner)",
+      "latitude": "40.706111",
+      "longitude": "-74.003333",
+      "description": "Lettie G. Howard, formerly Mystic C and Caviare, is a wooden Fredonia schooner built in 1893 in Essex, Massachusetts, USA"
+    },
+    {
+      "name": "Lorillard Snuff Mill",
+      "latitude": "40.859681",
+      "longitude": "-73.876174",
+      "description": "The Lorillard Snuff Mill now known as the Lillian and Amy Goldman Stone Mill, is the oldest existing tobacco manufacturing building in the United States"
+    },
+    {
+      "name": "Low Memorial Library",
+      "latitude": "40.80826",
+      "longitude": "-73.96188",
+      "description": "First building on Morningside Heights campus; capped by largest freestanding granite dome in U.S."
+    },
+    {
+      "name": "R. H. Macy and Company Store (Macy's)",
+      "latitude": "40.750278",
+      "longitude": "-73.988333",
+      "description": "Largest department store in world for many years"
+    },
+    {
+      "name": "McGraw Hill Building",
+      "latitude": "40.757222",
+      "longitude": "-73.991111",
+      "description": "Landmark Art Deco building; first U.S. building in International style (architecture)|International Style"
+    },
+    {
+      "name": "Claude McKay Residence",
+      "latitude": "40.814167",
+      "longitude": "-73.94166",
+      "description": "The Harlem YMCA, whose residents included African-American writer Claude McKay"
+    },
+    {
+      "name": "Metropolitan Life Insurance Company Tower",
+      "latitude": "40.74124",
+      "longitude": "-73.9874",
+      "description": "Tallest building in the world 1909-13; still part of the skyline a century latitudeer"
+    },
+    {
+      "name": "Metropolitan Museum of Art",
+      "latitude": "40.77891",
+      "longitude": "-73.96367",
+      "description": "One of the world's most important and prestigious art museums"
+    },
+    {
+      "name": "J. Pierpont Morgan Library",
+      "latitude": "40.748803",
+      "longitude": "-73.981556",
+      "description": "Office, Library, and now Museum of J. P. Morgan; the Panic of 1907 ended in the Library"
+    },
+    {
+      "name": "Morris-Jumel Mansion",
+      "latitude": "40.834528",
+      "longitude": "-73.938611",
+      "description": "Oldest building in Manhattan"
+    },
+    {
+      "name": "National City Bank Building",
+      "latitude": "40.706039",
+      "longitude": "-74.009174",
+      "description": "Home to one of the country's largest and most important banks since 1908"
+    },
+    {
+      "name": "New York Amsterdam News Building",
+      "latitude": "40.814944",
+      "longitude": "-73.94472",
+      "description": "Influential black newspaper the ''New York Amsterdam News'' was published here 1916-38"
+    },
+    {
+      "name": "New York Botanical Garden",
+      "latitude": "40.863611",
+      "longitude": "-73.878333",
+      "description": "One of the world's leading botanical gardens, with the largest herbarium in the US and second largest in the world after the ["
+    },
+    {
+      "name": "New York Cotton Exchange",
+      "latitude": "40.704444",
+      "longitude": "-74.010167",
+      "description": "First commodity market in the U.S.; now 1 Hanover Square"
+    },
+    {
+      "name": "New York Life Building",
+      "latitude": "40.742778",
+      "longitude": "-73.985556",
+      "description": "Last significant Cass Gilbert skyscraper in Manhattan"
+    },
+    {
+      "name": "New York Public Library",
+      "latitude": "40.753333",
+      "longitude": "-73.982222",
+      "description": "One of the largest and most important libraries in the U.S.; listing is for main branch building."
+    },
+    {
+      "name": "New York Stock Exchange",
+      "latitude": "40.706833",
+      "longitude": "-74.011028",
+      "description": "One of the first securities markets in the U.S.; still the world's largest"
+    },
+    {
+      "name": "New York Studio School of Drawing, Painting and Sculpture",
+      "latitude": "40.73295",
+      "longitude": "-73.998306",
+      "description": "Original home of the Whitney Museum, the first devoted to 20th-century American art"
+    },
+    {
+      "name": "New York Yacht Club",
+      "latitude": "40.755556",
+      "longitude": "-73.981556",
+      "description": "Oldest yachting club in U.S.; longtime home of the America's Cup"
+    },
+    {
+      "name": "Old Merchant's House",
+      "latitude": "40.7276",
+      "longitude": "-73.992386",
+      "description": "Nineteenth-century family home; preserved inside and out"
+    },
+    {
+      "name": "Old Quaker Meeting House",
+      "latitude": "40.763028",
+      "longitude": "-73.830365",
+      "description": "Only surviving 17th-century ecclesiastical frame building in New York; in almost continuous use since 1696"
+    },
+    {
+      "name": "Philosophy Hall",
+      "latitude": "40.806111",
+      "longitude": "-73.9625",
+      "description": "Edwin Armstrong developed FM radio in this Columbia University building"
+    },
+    {
+      "name": "Players Club",
+      "latitude": "40.737503",
+      "longitude": "-73.987058",
+      "description": "Extensive collection of art and theater memorabilia; interior redone by Stanford White"
+    },
+    {
+      "name": "Plaza Hotel",
+      "latitude": "40.764712",
+      "longitude": "-73.974574",
+      "description": "French Renaissance-style building; outstanding example of American hotel architecture; symbol of elegance; visible from much "
+    },
+    {
+      "name": "Plymouth Church of the Pilgrims",
+      "latitude": "40.699272",
+      "longitude": "-73.993556",
+      "description": "Important station on Underground Railroad when Henry Ward Beecher was pastor"
+    },
+    {
+      "name": "Pupin Physics Laboratory, Columbia University",
+      "latitude": "40.810064",
+      "longitude": "-73.961533",
+      "description": "Columbia University building; site of first nuclear fission|splitting of uranium atom in U.S. and other milestones in "
+    },
+    {
+      "name": "Quarters A, Brooklyn Navy Yard",
+      "latitude": "40.702494",
+      "longitude": "-73.981114",
+      "description": "Home to Matthew C. Perry|Matthew Perry at the time of his opening of Japan"
+    },
+    {
+      "name": "Paul Robeson Home",
+      "latitude": "40.834361",
+      "longitude": "-73.938972",
+      "description": "Home of legendary African-American actor and activist Paul Robeson"
+    },
+    {
+      "name": "Jackie Robinson House",
+      "latitude": "40.648292",
+      "longitude": "-73.915081",
+      "description": "Home of baseball great Jackie Robinson"
+    },
+    {
+      "name": "Rockefeller Center",
+      "latitude": "40.758611",
+      "longitude": "-73.979167",
+      "description": "Rockefeller Center is a large complex consisting of 19 commercial buildings covering 22 acres between 48th Street and 51st Street in Midtown Manhattan, New York City."
+    },
+    {
+      "name": "Sailors' Snug Harbor",
+      "latitude": "40.6425",
+      "longitude": "-74.102778",
+      "description": "First and only home for retired merchant seamen in U.S."
+    },
+    {
+      "name": "St. Ann and the Holy Trinity Church",
+      "latitude": "40.694583",
+      "longitude": "-73.992975",
+      "description": "Site of first figural stained-glass windows in U.S."
+    },
+    {
+      "name": "St. George's Episcopal Church",
+      "latitude": "40.734397",
+      "longitude": "-73.984964",
+      "description": "Home church of Harry Thacker Burleigh, African-American singer who helped establish the Spiritual (music)|spiritual in the "
+    },
+    {
+      "name": "St. Patrick's Cathedral",
+      "latitude": "40.758611",
+      "longitude": "-73.976389",
+      "description": "First large-scale medieval-style church built in U.S."
+    },
+    {
+      "name": "St. Paul's Chapel",
+      "latitude": "40.711394",
+      "longitude": "-74.009947",
+      "description": "One of the few surviving colonial-era churches in city; George Washington worshipped here following his inauguration; site of "
+    },
+    {
+      "name": "Margaret Sanger Clinic",
+      "latitude": "40.738056",
+      "longitude": "-73.994167",
+      "description": "Clinic where Margaret Sanger dispensed birth control"
+    },
+    {
+      "name": "Gen. Winfield Scott House",
+      "latitude": "40.735",
+      "longitude": "-73.995833",
+      "description": "Home of Winfield Scott, heroic general in the U.S.-Mexican War and latitudeer presidential candidate"
+    },
+    {
+      "name": "Seventh Regiment Armory",
+      "latitude": "40.7675",
+      "longitude": "-73.966111",
+      "description": "One of the most impressive collections of 1880s interior decoration outside of a museum; only armory actually owned by the unit "
+    },
+    {
+      "name": "Harry F. Sinclair House",
+      "latitude": "40.77675",
+      "longitude": "-73.963611",
+      "description": "Harry F. Sinclair, the oil industrialist, lived here from 1918–1930; now part of the Ukrainian Institute; often used in ["
+    },
+    {
+      "name": "Alfred E. Smith House",
+      "latitude": "40.713208",
+      "longitude": "-73.997962",
+      "description": "Home of four time New York State governor, Alfred E. Smith (and latitudeer presidential candidate) from 1907 to 1923"
+    },
+    {
+      "name": "SoHo-Cast Iron Historic District",
+      "latitude": "40.724315",
+      "longitude": "-74.001292",
+      "description": "Believed to be the largest existing collection of latitudee 19th-century cast iron facades in the world"
+    },
+    {
+      "name": "A. T. Stewart Company Store",
+      "latitude": "40.71425",
+      "longitude": "-74.006111",
+      "description": "Site of the first American department store (now known as the 'New York Sun' building)"
+    },
+    {
+      "name": "Stonewall",
+      "latitude": "40.733797",
+      "longitude": "-74.0021",
+      "description": "Site of 1969 Stonewall riots which began gay rights movement"
+    },
+    {
+      "name": "St. Bartholomew's Church and Community House",
+      "latitude": "40.757222",
+      "longitude": "-73.973611",
+      "description": "A pivotal example of the work of Bertram Grosvenor Goodhue and an outstanding example of early 20th-century ecclesiastical "
+    },
+    {
+      "name": "Surrogate's Court",
+      "latitude": "40.713511",
+      "longitude": "-74.004589",
+      "description": "Probate Courthouse across from NYC's city hall"
+    },
+    {
+      "name": "Tenement Building at 97 Orchard Street",
+      "latitude": "40.7185",
+      "longitude": "-73.990139",
+      "description": "Preserved tenement building that housed hundreds of immigrants; now the heart of the Lower East Side Tenement Museum."
+    },
+    {
+      "name": "Third Judicial District Courthouse",
+      "latitude": "40.734722",
+      "longitude": "-73.999167",
+      "description": "Originally built as the Third Judicial District Courthouse; faced with demolition, public outcry led to its reuse as a branch of "
+    },
+    {
+      "name": "Tiffany and Company Building",
+      "latitude": "40.75",
+      "longitude": "-73.981306",
+      "description": "Served as the home of Tiffany and Company from 1905 through 1940"
+    },
+    {
+      "name": "Samuel J. Tilden House",
+      "latitude": "40.7375",
+      "longitude": "-73.987222",
+      "description": "Home of Samuel J. Tilden, former New York State governor and loser of the bitter 1876 presidential election"
+    },
+    {
+      "name": "The Town Hall",
+      "latitude": "40.755986",
+      "longitude": "-73.984712",
+      "description": "America's Town Meetings of the Air radio programs from here in the 1930s created public-affairs media."
+    },
+    {
+      "name": "Triangle Shirtwaist Factory",
+      "latitude": "40.730011",
+      "longitude": "-73.995817",
+      "description": "Site of the Triangle Shirtwaist Factory fire, one of the worst industrial disasters in the US, which led to many workplace "
+    },
+    {
+      "name": "Trinity Church",
+      "latitude": "40.708056",
+      "longitude": "-74.012222",
+      "description": "Historic church which looks down Wall Street"
+    },
+    {
+      "name": "Old New York County Courthouse",
+      "latitude": "40.713167",
+      "longitude": "-74.006",
+      "description": "Historic courthouse, more commonly known as the Tweed Courthouse, connected to Tammany Hall, now used by NYC's Department of "
+    },
+    {
+      "name": "Union Square",
+      "latitude": "40.735556",
+      "longitude": "-73.990556",
+      "description": "The political heart of Manhattan; many protests begin or end here"
+    },
+    {
+      "name": "United Charities Building",
+      "latitude": "40.739389",
+      "longitude": "-73.986389",
+      "description": "Built in 1893 by a wealthy businessman in order to provide his favorite charities a low cost location for their operations"
+    },
+    {
+      "name": "United Workers Cooperatives",
+      "latitude": "40.866389",
+      "longitude": "-73.869722",
+      "description": "Built in 1926 by the United Workers' Association to improve the living standards of its members, many of whom lived in squalid "
+    },
+    {
+      "name": "U.S. Customhouse",
+      "latitude": "40.704294",
+      "longitude": "-74.013773",
+      "description": "Cass Gilbert designed Customhouse for New York Harbor; now part of the Smithsonian Institution"
+    },
+    {
+      "name": "University Heights Campus (Bronx Community College of the City University of New York)",
+      "latitude": "40.857778",
+      "longitude": "-73.912222",
+      "description": "Collection of Beaux Arts architecture|Beaux Arts buildings by Stanford White is one of the best examples of that style "
+    },
+    {
+      "name": "Van Cortlandt House",
+      "latitude": "40.89",
+      "longitude": "-73.896389",
+      "description": "Mansion for the Van Cortlandt family built in 1748 and used during the American Revolution"
+    },
+    {
+      "name": "Voorlezer's House",
+      "latitude": "40.571417",
+      "longitude": "-74.1475",
+      "description": "Oldest known surviving schoolhouse in America; owned by the Staten Island historical society"
+    },
+    {
+      "name": "Wards Point Archeological Site",
+      "latitude": "40.498889",
+      "longitude": "-74.251944",
+      "description": "Archaeological site in Conference House Park containing prehistoric remains."
+    },
+    {
+      "name": "Woodlawn Cemetery",
+      "latitude": "40.889167",
+      "longitude": "-73.873333",
+      "description": "Illustrates transition from rural cemetery to 20th-century styles; notable dead buried here include Robert Moses and R.H. "
+    },
+    {
+      "name": "Woolworth Building",
+      "latitude": "40.712222",
+      "longitude": "-74.008056",
+      "description": "One of the oldest —and most famous — skyscrapers in New York City; one of the tallest buildings in the New York City"
+    },
+    {
+      "name": "Wyckoff House",
+      "latitude": "40.644342",
+      "longitude": "-73.920777",
+      "description": "Oldest surviving Dutch saltbox frame house in America"
+    },
+    {
+      "name": "Wyckoff-Bennett Homestead",
+      "latitude": "40.610851",
+      "longitude": "-73.951265",
+      "description": "Housed Hessian soldiers during the American Revolution"
+    }
+  ]
+}
