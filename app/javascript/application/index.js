@@ -19,4 +19,4 @@ window.addEventListener('resize', () => {
   window.NYCycle.resizeScreen();
 });
 
-document.documentElement.style.setProperty('--vh', `${window.NYCycle.viewHeight}px`);
+document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);

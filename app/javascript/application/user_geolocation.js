@@ -5,6 +5,7 @@ const setUpApp = function () {
     mainContainer: document.querySelector('#main-container'),
     logoContainer: document.querySelector('#logo-container'),
     logoLink: document.querySelector('#logo-link'),
+    binPicture: document.querySelector('#bin-picture'),
     mainButtonsContainer: document.querySelector('#main-buttons-container'),
     userLocationButton: document.querySelector('#user-location'),
     addressLocationButton: document.querySelector('#address-location'),
@@ -264,6 +265,7 @@ const setUpApp = function () {
         app.mapContainer.classList.add('visible');
         app.streetViewContainer.classList.remove('visible');
         app.walkingDirectionContainer.classList.remove('visible');
+        app.logoContainer.classList.remove('justify-end');
       };
       if (app.mapContainer.classList.contains('visible')) {
         hideElements();
@@ -293,12 +295,15 @@ const setUpApp = function () {
         app.walkingDirectionContainer.classList.add('visible');
         app.streetViewContainer.classList.remove('visible');
         app.mapContainer.classList.remove('visible');
+        app.logoContainer.classList.remove('justify-end');
       };
       if (mainApp.walkingDirectionContainer.classList.contains('visible')) {
         hideElements();
       } else {
         if (!maps.walkingDirectionsRendered) {
-          maps.initWalking(app.userLat, app.userLng, app.binLat, app.binLng)
+          let locationLat = app.landmarkLat || app.userLat;
+          let locationLng = app.landmarkLng || app.userLng;
+          maps.initWalking(locationLat, locationLng, app.binLat, app.binLng)
             .then(showElements)
             .catch(function (exception) {
               console.log(exception)
@@ -323,6 +328,7 @@ const setUpApp = function () {
         app.streetViewContainer.classList.add('visible');
         app.mapContainer.classList.remove('visible');
         app.walkingDirectionContainer.classList.remove('visible');
+        app.logoContainer.classList.add('justify-end');
       };
       if (app.streetViewContainer.classList.contains('visible')) {
         hideElements();
@@ -351,27 +357,24 @@ const setUpApp = function () {
         return;
       }
 
-      let textColor, backgroundColor, icon, textClass;
+      let icon;
       let messageDiv = document.createElement('div');
       let messageTextContainer = document.createElement('p');
       switch (state) {
         case "info":
-          icon = '<i class="fas fa-info-circle" style="color: red;"></i>';
-          textColor = 'black'
-          backgroundColor = 'yellow'
-          textClass = 'info'
+          icon = `<i class='fas fa-info-circle ${state}'></i>`;
+          messageDiv.classList.add(state);
+          messageTextContainer.classList.add(state);
           break;
         case "error":
-          icon = '<i class="fas fa-exclamation-triangle" style="color: white;"></i>';
-          textColor = 'white';
-          backgroundColor = 'red'
-          textClass = 'error'
+          icon = `<i class='fas fa-exclamation-triangle ${state}'></i>`;
+          messageDiv.classList.add(state);
+          messageTextContainer.classList.add(state);
           break;
         case "request":
-          icon = '<i class="fas fa-hiking" style="color: gray;"></i>';
-          textColor = 'black';
-          backgroundColor = 'transparent'
-          textClass = 'blinking'
+          icon = `<i class='fas fa-hiking ${state}'></i>`;
+          messageDiv.classList.add(state);
+          messageTextContainer.classList.add(state, "blinking");
           break;
         default:
           break;
@@ -379,13 +382,10 @@ const setUpApp = function () {
       if (html) {
         messageDiv.innerHTML = icon + message;
       } else {
-        messageDiv.innerHTML = icon;
         messageTextContainer.textContent = message;
-        messageTextContainer.style.color = textColor;
-        messageTextContainer.classList.add(textClass);
+        messageDiv.innerHTML = icon;
         messageDiv.appendChild(messageTextContainer);
       }
-      messageDiv.style.backgroundColor = backgroundColor;
       messageDiv.setAttribute('id', 'message-div')
       app.messageContainer.appendChild(messageDiv);
       app.messageContainer.classList.remove('hidden');
@@ -404,21 +404,53 @@ const setUpApp = function () {
         app.userLocationButton.setAttribute('disabled', 'true');
         app.addressLocationButton.setAttribute('disabled', 'true');
       }
+    },
+
+    setEventListenersOnLandmarkForm: function () {
+      let app = window.NYCycle.mainApp;
+      app.landmarksForm = document.querySelector('#landmark-select-form');
+      app.continueButton = document.querySelector('#do-not-use-landmark');
+      app.landmarksForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        app.setPendingState();
+        app.closestBinToLandmark(app.landmarksForm)
+          .then(app.getMainMap)
+          .catch(function (exception) {
+            console.log(exception)
+          })
+      })
+      app.continueButton.addEventListener('click', function (e) {
+        app.setPendingState();
+        app.getMainMap();
+      })
+    },
+
+    toggleBinPic: function(show) {
+      if (show) {
+        this.binPicture.classList.remove('hidden');
+        this.binPicture.classList.add('visible');
+      } else {
+        this.binPicture.classList.remove('visible');
+        this.binPicture.classList.add('hidden');
+      }
     }
   }
 
   mainApp.mapButton.addEventListener('click', function (e) {
     mainApp.toggleSpinner(true);
+    mainApp.toggleBinPic();
     mainApp.getMap();
   })
 
   mainApp.walkingDirectionsButton.addEventListener('click', function (e) {
     mainApp.toggleSpinner(true);
+    mainApp.toggleBinPic();
     mainApp.getWalkingDirections();
   })
 
   mainApp.streetViewButton.addEventListener('click', function (e) {
     mainApp.toggleSpinner(true);
+    mainApp.toggleBinPic(true);
     mainApp.getStreetView();
   })
 
@@ -440,18 +472,10 @@ const setUpApp = function () {
       .catch(function (exception) {
         if (typeof exception === "object" && exception.distanceToBin) {
           if (!exception.inNYC) {
+            mainApp.setPendingState();
             mainApp.toggleSpinner(false);
             mainApp.toggleMessage(true, exception.message, 'info', true);
-            mainApp.landmarksForm = document.querySelector('#landmark-select-form');
-            mainApp.landmarksForm.addEventListener('submit', function (e) {
-              e.preventDefault();
-              mainApp.setPendingState();
-              mainApp.closestBinToLandmark(mainApp.landmarksForm)
-                .then(mainApp.getMainMap)
-                .catch(function (exception) {
-                  console.log(exception)
-                })
-            })
+            mainApp.setEventListenersOnLandmarkForm();
           }
         } else {
           console.log(exception)
