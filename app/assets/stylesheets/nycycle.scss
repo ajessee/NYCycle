@@ -383,7 +383,7 @@ body {
 @media only screen and (max-width: 767px) {
 
   #main-container.maps-visible {
-    grid-template-rows: 8% 5% 75%;
+    grid-template-rows: 10% 10% 75%;
     grid-template-columns: 100%;
     row-gap: 1%;
   }
@@ -402,6 +402,7 @@ body {
       grid-row: 1;
       width: auto;
       justify-self: center;
+      margin-top: 5%;
 
       &.justify-end {
         justify-self: end;
@@ -453,7 +454,7 @@ body {
     grid-column: 1;
     width: 50vw;
     justify-self: end;
-    margin: 0;
+    margin: 5% 5% 0 0;
 
     img {
       height: 3em;
