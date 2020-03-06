@@ -204,16 +204,12 @@ const setUpApp = function () {
       app.logoLink.classList.add('enabled');
     },
 
-    getMainMap: function (landmark = false) {
-      let arguments 
+    getMainMap: function () { 
       let app = window.NYCycle.mainApp;
-      if (landmarks) {
+      let locationLat = app.landmarkLat || app.userLat;
+      let locationLng = app.landmarkLng || app.userLng;
 
-      } else {
-
-      }
-
-      window.NYCycle.maps.initMap(app.userLat, app.userLng, app.binLat, app.binLng)
+      window.NYCycle.maps.initMap(locationLat, locationLng, app.binLat, app.binLng)
         .then(function () {
           app.setMapsReadyState();
         })
@@ -224,6 +220,7 @@ const setUpApp = function () {
 
     setMapsReadyState: function () {
       let app = window.NYCycle.mainApp;
+      window.NYCycle.resizeScreen();
       // Turn of spinner
       app.toggleSpinner(false);
       // Hide info panel
@@ -407,20 +404,6 @@ const setUpApp = function () {
         app.userLocationButton.setAttribute('disabled', 'true');
         app.addressLocationButton.setAttribute('disabled', 'true');
       }
-    },
-
-    addLandmarksFormEventListener: function () {
-      let app = window.NYCycle.mainApp;
-      app.landmarksForm = document.querySelector('#landmark-select-form');
-      app.landmarksForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-        app.setPendingState();
-        app.closestBinToLandmark(app.landmarksForm)
-          .then(mainApp.getMainMap)
-          .catch(function (exception) {
-            console.log(exception)
-          })
-      })
     }
   }
 
@@ -450,8 +433,6 @@ const setUpApp = function () {
       })
   })
 
-  mainApp.addLandmarksFormEventListener
-
   mainApp.userLocationButton.addEventListener('click', function (e) {
     mainApp.setPendingState(this);
     mainApp.closestBinToUser()
@@ -461,11 +442,16 @@ const setUpApp = function () {
           if (!exception.inNYC) {
             mainApp.toggleSpinner(false);
             mainApp.toggleMessage(true, exception.message, 'info', true);
-            mainApp.addLandmarksFormEventListener();
-            // Write function to call the server to get bin location and then call google maps function
-            // Instead of form in exception.message actually calling the backend
-            // Use event listener on that form to trigger the call.
-            // Probably can just set event listener here
+            mainApp.landmarksForm = document.querySelector('#landmark-select-form');
+            mainApp.landmarksForm.addEventListener('submit', function (e) {
+              e.preventDefault();
+              mainApp.setPendingState();
+              mainApp.closestBinToLandmark(mainApp.landmarksForm)
+                .then(mainApp.getMainMap)
+                .catch(function (exception) {
+                  console.log(exception)
+                })
+            })
           }
         } else {
           console.log(exception)
