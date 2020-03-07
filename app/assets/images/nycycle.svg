@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg viewBox="0 0 484.736 230.42" width="500px" height="243.9px" id="nycycle-logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+<svg id="nycycle-logo-svg" preserveAspectRatio="xMidYMid slice" viewBox="0 0 484.736 230.42" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
   <defs>
     <linearGradient gradientUnits="userSpaceOnUse" x1="221.773" y1="218.696" x2="221.773" y2="418.311" id="gradient-0" gradientTransform="matrix(0.990272, 0.143929, -0.069427, 0.511138, 17.341041, 71.52921)" spreadMethod="reflect">
       <stop offset="0" style="stop-color: rgba(41, 137, 227, 1)"/>

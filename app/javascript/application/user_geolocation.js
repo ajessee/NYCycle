@@ -94,12 +94,8 @@ const setUpApp = function () {
               app.toggleMessage(true, 'Weird. We have an error that we cannot figure out. Please use address form instead', 'error');
               app.toggleSpinner(false);
           }
-          if (app.userLocationButton.getAttribute('disabled') === 'true') {
-            app.userLocationButton.removeAttribute('disabled')
-          }
-          if (app.addressLocationButton.getAttribute('disabled') === 'true') {
-            app.addressLocationButton.removeAttribute('disabled')
-          }
+          app.toggleUserLocationButton(true);
+          app.toggleAddressLocationButton();
           reject("Geolocation Error")
         };
 
@@ -392,6 +388,22 @@ const setUpApp = function () {
       app.messageContainer.classList.add('visible');
     },
 
+    toggleUserLocationButton: function (disable) {
+      if (disable) {
+        this.userLocationButton.setAttribute('disabled', 'true');
+      } else {
+        this.userLocationButton.removeAttribute('disabled');
+      }
+    },
+
+    toggleAddressLocationButton: function (disable) {
+      if (disable) {
+        this.addressLocationButton.setAttribute('disabled', 'true');
+      } else {
+        this.addressLocationButton.removeAttribute('disabled');
+      }
+    },
+
     setPendingState: function (button) {
       let app = window.NYCycle.mainApp;
       // Turn on spinner
@@ -399,10 +411,10 @@ const setUpApp = function () {
       // Show info panel
       app.toggleMessage(true, 'Getting maps...', 'request');
       if (button && button.id === 'user-location') {
-        app.addressLocationButton.setAttribute('disabled', 'true');
+        app.toggleAddressLocationButton(true);
       } else {
-        app.userLocationButton.setAttribute('disabled', 'true');
-        app.addressLocationButton.setAttribute('disabled', 'true');
+        app.toggleUserLocationButton(true);
+        app.toggleAddressLocationButton(true);
       }
     },
 
