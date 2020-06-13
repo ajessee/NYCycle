@@ -14,7 +14,8 @@ default: &default
 development:
   <<: *default
   database: nycycle_development
-  port: 5433
+  # TODO: Change postgres port to 5432 (from 5433) on home computer
+  port: 5432
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -22,7 +23,8 @@ development:
 test:
   <<: *default
   database: nycycle_test
-  port: 5433
+  # TODO: Change postgres port to 5432 (from 5433) on home computer
+  port: 5432
 
 production:
   <<: *default
