@@ -424,6 +424,7 @@ const setUpApp = function () {
       app.continueButton = document.querySelector('#do-not-use-landmark');
       app.landmarksForm.addEventListener('submit', function (e) {
         e.preventDefault();
+        e.stopPropagation();
         app.setPendingState();
         app.closestBinToLandmark(app.landmarksForm)
           .then(app.getMainMap)

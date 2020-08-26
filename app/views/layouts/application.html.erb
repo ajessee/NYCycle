@@ -2,7 +2,7 @@
 <html>
   <head>
       <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=<%= Rails.application.credentials.dig(:google_maps_api_key) %>">
+      src="https://maps.googleapis.com/maps/api/js?key=<%= Rails.env.production? ?  Rails.application.credentials.dig(:google_maps_api_key) : Rails.application.credentials.dig(:google_maps_api_key_local) %>">
     </script>
     <title><%= content_for?(:title) ? yield(:title) : "NYCycle" %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
