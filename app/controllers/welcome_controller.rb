@@ -8,7 +8,7 @@ class WelcomeController < ApplicationController
     @bin = Bin.closest(origin: @user_coordinates).first
     @user_distance_to_bin = @user_coordinates.distance_to(@bin).round
     @in_NYC = @user_coordinates.distance_to(@bin) < 20
-    if !@in_NYC
+    unless @in_NYC
       @landmarks = Landmark.all
       @message_html = render_to_string(
         partial: 'outside',
@@ -18,7 +18,7 @@ class WelcomeController < ApplicationController
       )
     end
     respond_to do |format|
-      format.js {
+      format.js do
         render json: {
           binLat: @bin.latitude,
           binLng: @bin.longitude,
@@ -26,7 +26,7 @@ class WelcomeController < ApplicationController
           inNYC: @in_NYC,
           html: @message_html
         }
-      }
+      end
     end
   end
 
@@ -35,14 +35,14 @@ class WelcomeController < ApplicationController
     @landmark_coordinates = Geokit::LatLng.new(@landmark.latitude, @landmark.longitude)
     @bin = Bin.closest(origin: @landmark_coordinates).first
     respond_to do |format|
-      format.js {
+      format.js do
         render json: {
           binLat: @bin.latitude,
           binLng: @bin.longitude,
           landmarkLat: @landmark.latitude,
           landmarkLng: @landmark.longitude
         }
-      }
+      end
     end
   end
 
@@ -55,7 +55,7 @@ class WelcomeController < ApplicationController
     @user_distance_to_bin = @address_coordinates.distance_to(@closest_bin)
     @in_NYC = @address_coordinates.distance_to(@closest_bin) < 20
     respond_to do |format|
-      format.js {
+      format.js do
         render json: {
           addressLat: @address_coordinates.lat,
           addressLng: @address_coordinates.lng,
@@ -64,7 +64,7 @@ class WelcomeController < ApplicationController
           distanceToBin: @user_distance_to_bin,
           inNYC: @in_NYC
         }
-      }
+      end
     end
   end
 
