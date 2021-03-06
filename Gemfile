@@ -30,6 +30,8 @@ gem 'geokit-rails'
 
 gem 'httparty'
 
+gem 'rexml'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
